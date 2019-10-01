@@ -1,0 +1,81 @@
+body {
+    background-color: #232323;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "helvetica", "Montserrat", "Avenir";
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    line-height: 1.2;
+    text-align: center;
+    background-color: steelblue;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    outline: none;
+    transition: all 0.3s;
+    --webkit-transition: all 0.3s;
+    --moz-transition: all 0.3s;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+
+/* ID Elements */
+
+#container {
+    max-width: 70%;
+    margin: 20px auto;
+}
+
+#stripe {
+    background-color: white;
+    height: 25%;
+    color: #232323;
+}
+
+#colorDisplay {
+    font-size: 160%;
+}
+
+#message {
+    display: inline-block;
+    width: 15%;
+}
+
+
+/* Class Elements */
+
+.square {
+    background-color: purple;
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    /* Transition to squares mit browser support. */
+    transition: background 0.6s;
+    --webkit-transition: background 0.6s;
+    --moz-transition: background 0.6s;
+}
+
+.selected {
+    color: white;
+    background-color: steelblue;
+}
