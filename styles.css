@@ -1,81 +1,76 @@
 body {
-    background-color: #232323;
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-family: "helvetica", "Montserrat", "Avenir";
+    height: 100vh;
+    overflow: hidden;
 }
 
-h1 {
-    margin: 0;
-    padding: 20px 0;
-    line-height: 1.2;
-    text-align: center;
-    background-color: steelblue;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-button {
-    border: none;
-    background: none;
-    text-transform: uppercase;
+.main {
     height: 100%;
-    font-weight: 700;
-    color: steelblue;
-    letter-spacing: 1px;
-    font-size: inherit;
-    outline: none;
-    transition: all 0.3s;
-    --webkit-transition: all 0.3s;
-    --moz-transition: all 0.3s;
+    width: 100%;
 }
 
-button:hover {
-    color: white;
-    background-color: steelblue;
+.title {
+    height: 30%;
+    width: 100%;
+    background-color: #343a40;
 }
 
-
-/* ID Elements */
-
-#container {
-    max-width: 70%;
-    margin: 20px auto;
+.stripe {
+    height: 5%;
+    width: 100%;
 }
 
-#stripe {
-    background-color: white;
-    height: 25%;
-    color: #232323;
+.body-1 {
+    height: 75%;
+    width: 100%;
+    background-color: #343a40;
 }
 
-#colorDisplay {
-    font-size: 160%;
+/* CONTROL STRIPE */
+.btn {
+    /* padding: 0 !important; */
+    color: #212529 !important;
+    padding: .30rem .55rem !important;
+    font-size: 0.9rem !important;
+    border: none !important;
+    border-radius: 0 !important;
+    height: 100% !important;
+    box-shadow: none !important;
 }
 
-#message {
-    display: inline-block;
-    width: 15%;
+.btn:hover {
+    color: white !important;
 }
 
+#control-stripe {
+    height: 100%;
+}
 
-/* Class Elements */
-
+/* COLOUR SECTION */
 .square {
-    background-color: purple;
-    width: 30%;
-    padding-bottom: 30%;
-    float: left;
-    margin: 1.66%;
-    border-radius: 15%;
-    /* Transition to squares mit browser support. */
-    transition: background 0.6s;
-    --webkit-transition: background 0.6s;
-    --moz-transition: background 0.6s;
+    height: 11rem;
+    width: 11rem;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
-.selected {
-    color: white;
-    background-color: steelblue;
+/* TOOLS */
+.h10 {
+    height: 100%;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.3rem !important;
+    }
+    h2 {
+        font-size: 2.9rem !important;
+    }
+
+    .square {
+        height: 7rem;
+        width: 7rem;
+        background-color: #eee;
+        border-radius: 5px;
+    }
+  }
