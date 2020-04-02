@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Colour Game</title>
   </head>
@@ -24,6 +25,26 @@
                 <span class="px-4" id="message" >Result!</span>
                 <button class="btn btn-outline-success" id="#easyBtn">Easy</button>
                 <button class="btn btn-outline-danger"id="#hardBtn">Hard</button>
+                <button class="btn btn-outline-warning"id="#hardBtn" data-toggle="modal"
+                data-target="#cvInfo"><i class="fa fa-2x fa-question-circle"></i></button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="cvInfo" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalCenterTitle">How To Play?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <p class="lead text-dark">RGB = Red Green Blue</p>
+                        <p class="lead text-dark">There are three numbers generated between 1 and 255 for each RGB value, the higher the number the more that colour will have effect on final colour. For example, the value 'RGB(255, 0, 0)' would return a red colour, and 'RGB(0, 255, 0)' a green.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
