@@ -5,10 +5,10 @@ let squares = document.querySelectorAll(".square");
 let pickedColor = pickColor();
 let colorDisplay = document.querySelector("#colorDisplay");
 let message = document.querySelector("#message");
-let h1 = document.querySelector('h1');
 let resetBtn = document.querySelector('#reset');
 let easyBtn = document.getElementById('#easyBtn');
 let hardBtn = document.getElementById('#hardBtn');
+let topSection = document.querySelector('.title');
 
 
 
@@ -29,7 +29,7 @@ easyBtn.addEventListener('click', function() {
             squares[i].style.display = 'none';
         }
     }
-    h1.style.backgroundColor = 'steelblue';
+    
     message.textContent = '';
 });
 
@@ -46,18 +46,12 @@ hardBtn.addEventListener('click', function() {
         squares[i].style.backgroundColor = colors[i];
         squares[i].style.display = 'block';
     }
-    h1.style.backgroundColor = 'steelblue';
     message.textContent = '';
 });
 
 // Reset Button Function
 resetBtn.addEventListener('click', function() {
-    // generate new Colors accoring to difficulty
-    // if (numSquares === 3) {
-    //     randomColor(3);
-    // } else {
-    //     randomColor(6);
-    // }
+
     colors = randomColor(numSquares);
     // pick a new color from array
     pickedColor = pickColor();
@@ -69,7 +63,6 @@ resetBtn.addEventListener('click', function() {
     }
     // Reset Button text & H1 background Color
     resetBtn.textContent = 'New Colors?';
-    h1.style.backgroundColor = 'steelblue';
     message.textContent = '';
 });
 
@@ -88,11 +81,11 @@ for (let i = 0; i < squares.length; i++) {
         // compare color to picked color
         if (clickedColor === pickedColor) {
             message.textContent = "Correct!";
-            h1.style.backgroundColor = clickedColor;
+            topSection.style.backgroundColor = clickedColor;
             resetBtn.textContent = 'Play Again?';
             changeColors(pickedColor);
         } else {
-            this.style.backgroundColor = "#232323";
+            this.style.backgroundColor = "#343a40";
             message.textContent = "Wrong!";
         }
     });
